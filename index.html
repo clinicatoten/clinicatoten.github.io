@@ -124,7 +124,7 @@
 <script>
   // Mensagem que já vem escrita quando o cliente abre o WhatsApp
   document.querySelectorAll("[data-wa]").forEach(function (a) {
-    var msg = "Olá! Vim pelo Instagram e gostaria de mais informações sobre a Clínica Toten – Unidade " + a.dataset.unit + ". 💛";
+    var msg = "Olá! Vim pelo Instagram e gostaria de mais informações sobre a Clínica Toten – Unidade " + a.dataset.unit + ".";
     a.href = "https://wa.me/" + a.dataset.wa + "?text=" + encodeURIComponent(msg);
   });
 </script>
