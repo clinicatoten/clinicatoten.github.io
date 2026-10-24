@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clínica Toten</title>
+<meta name="description" content="Clínica Toten – Desenvolvimento Humano. Fale conosco pelo WhatsApp ou avalie nossas unidades no Google.">
+<meta property="og:title" content="Clínica Toten">
+<meta property="og:description" content="TEA com amor 💛 Fale conosco pelo WhatsApp.">
+<meta property="og:image" content="logo.jpg">
+<link rel="icon" href="logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #fdf8ef;
+    --card: #ffffff;
+    --brown: #5b2c16;
+    --text: #3d2416;
+    --muted: #8a6f5c;
+    --yellow: #f5c518;
+    --blue: #2f7fd6;
+    --red: #d9322b;
+    --green: #1fa855;
+    --border: #f0e4d0;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: "Nunito", system-ui, -apple-system, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 24px 16px;
+  }
+  main { width: 100%; max-width: 440px; text-align: center; }
+
+  .logo {
+    width: 120px; height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: #fff;
+    box-shadow: 0 6px 24px rgba(91, 44, 22, .15);
+    border: 4px solid #fff;
+  }
+  h1 { margin-top: 12px; font-size: 1.6rem; font-weight: 800; color: var(--brown); }
+  .tagline { color: var(--muted); font-size: .95rem; margin: 2px 0 20px; }
+
+  .unit {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 16px 16px 16px;
+    margin-bottom: 14px;
+    box-shadow: 0 2px 10px rgba(91, 44, 22, .05);
+  }
+  .unit h2 {
+    font-size: 1.1rem; font-weight: 800; color: var(--brown);
+    margin-bottom: 12px;
+    display: flex; align-items: center; justify-content: center; gap: 8px;
+  }
+  .unit h2::before {
+    content: ""; width: 10px; height: 10px; border-radius: 50%;
+    background: var(--accent);
+  }
+
+  .btn {
+    display: flex; align-items: center; justify-content: center; gap: 10px;
+    width: 100%;
+    padding: 14px 16px;
+    border-radius: 14px;
+    font-size: 1rem; font-weight: 700;
+    text-decoration: none;
+    transition: transform .12s ease, box-shadow .12s ease;
+  }
+  .btn + .btn { margin-top: 10px; }
+  .btn:active { transform: scale(.98); }
+  .btn svg { width: 22px; height: 22px; flex-shrink: 0; }
+
+  .btn-wa { background: var(--green); color: #fff; box-shadow: 0 4px 12px rgba(31, 168, 85, .25); }
+  .btn-review { background: #fff; color: var(--brown); border: 2px solid var(--yellow); }
+  .btn-review svg { color: var(--yellow); }
+
+  footer { margin-top: 16px; font-size: .85rem; color: var(--muted); }
+  footer strong { color: var(--blue); letter-spacing: .5px; }
+  footer strong .y { color: #d9a400; }
+  footer strong .r { color: var(--red); }
+</style>
+</head>
+<body>
+<main>
+  <img class="logo" src="logo.jpg" alt="Logo Clínica Toten">
+  <h1>Clínica Toten</h1>
+  <p class="tagline">Desenvolvimento Humano</p>
+
+  <section class="unit" style="--accent: var(--blue)">
+    <h2>Unidade Centro</h2>
+    <a class="btn btn-wa" data-wa="5547991335765" data-unit="Centro" href="https://wa.me/5547991335765" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.38-1.47-.88-.79-1.47-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.06 2.88 1.21 3.08c.15.2 2.1 3.2 5.08 4.48.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.75-.72 2-1.41.25-.69.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35zM12.05 21.5h-.01a9.4 9.4 0 0 1-4.8-1.32l-.34-.2-3.57.94.95-3.48-.22-.36a9.4 9.4 0 0 1-1.44-5.02c0-5.2 4.24-9.43 9.44-9.43a9.38 9.38 0 0 1 9.43 9.44c0 5.2-4.23 9.43-9.44 9.43zm8.03-17.46A11.27 11.27 0 0 0 12.05.7C5.8.7.7 5.79.7 12.05c0 2 .52 3.95 1.52 5.67L.6 23.6l6.02-1.58a11.33 11.33 0 0 0 5.42 1.38h.01c6.25 0 11.35-5.09 11.35-11.35 0-3.03-1.18-5.88-3.32-8.02z"/></svg>
+      Falar no WhatsApp
+    </a>
+    <a class="btn btn-review" href="https://g.page/r/CZR425_Q1tAUEBM/review" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.94 5.96 6.56.95-4.75 4.63 1.12 6.54L12 17.5l-5.87 3.08 1.12-6.54L2.5 9.41l6.56-.95z"/></svg>
+      Avaliar no Google
+    </a>
+  </section>
+
+  <section class="unit" style="--accent: var(--red)">
+    <h2>Unidade Dom Bosco</h2>
+    <a class="btn btn-wa" data-wa="5547996809304" data-unit="Dom Bosco" href="https://wa.me/5547996809304" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.38-1.47-.88-.79-1.47-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.06 2.88 1.21 3.08c.15.2 2.1 3.2 5.08 4.48.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.75-.72 2-1.41.25-.69.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35zM12.05 21.5h-.01a9.4 9.4 0 0 1-4.8-1.32l-.34-.2-3.57.94.95-3.48-.22-.36a9.4 9.4 0 0 1-1.44-5.02c0-5.2 4.24-9.43 9.44-9.43a9.38 9.38 0 0 1 9.43 9.44c0 5.2-4.23 9.43-9.44 9.43zm8.03-17.46A11.27 11.27 0 0 0 12.05.7C5.8.7.7 5.79.7 12.05c0 2 .52 3.95 1.52 5.67L.6 23.6l6.02-1.58a11.33 11.33 0 0 0 5.42 1.38h.01c6.25 0 11.35-5.09 11.35-11.35 0-3.03-1.18-5.88-3.32-8.02z"/></svg>
+      Falar no WhatsApp
+    </a>
+    <a class="btn btn-review" href="https://g.page/r/CWnQJlXto0YxEBM/review" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.94 5.96 6.56.95-4.75 4.63 1.12 6.54L12 17.5l-5.87 3.08 1.12-6.54L2.5 9.41l6.56-.95z"/></svg>
+      Avaliar no Google
+    </a>
+  </section>
+
+  <footer>Feito com 💛 &nbsp;·&nbsp; <strong>TEA <span class="y">COM</span> <span class="r">AMOR</span></strong></footer>
+</main>
+<script>
+  // Mensagem que já vem escrita quando o cliente abre o WhatsApp
+  document.querySelectorAll("[data-wa]").forEach(function (a) {
+    var msg = "Olá! Vim pelo Instagram e gostaria de mais informações sobre a Clínica Toten – Unidade " + a.dataset.unit + ". 💛";
+    a.href = "https://wa.me/" + a.dataset.wa + "?text=" + encodeURIComponent(msg);
+  });
+</script>
+</body>
+</html>
