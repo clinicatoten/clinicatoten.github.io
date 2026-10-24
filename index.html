@@ -123,10 +123,24 @@
 </main>
 <script>
   // Mensagem que já vem escrita quando o cliente abre o WhatsApp
+  // A página intermediária do WhatsApp (wa.me / api.whatsapp.com) estraga emojis,
+  // então no celular abrimos o app direto e no computador vamos direto ao WhatsApp Web.
+  var mobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
   document.querySelectorAll("[data-wa]").forEach(function (a) {
-    var msg = "Olá! Vim pelo Instagram e gostaria de mais informações sobre a Clínica Toten – Unidade " + a.dataset.unit + ". 💛";
-    // api.whatsapp.com em vez de wa.me: o redirecionamento do wa.me estraga emojis no iPhone
-    a.href = "https://api.whatsapp.com/send?phone=" + a.dataset.wa + "&text=" + encodeURIComponent(msg);
+    var msg = "Olá! Vim pelo Instagram e gostaria de mais informações sobre a Clínica Toten – Unidade " + a.dataset.unit + ". 🌻💛";
+    var query = "?phone=" + a.dataset.wa + "&text=" + encodeURIComponent(msg);
+    var fallback = "https://api.whatsapp.com/send" + query;
+    if (mobile) {
+      a.href = "whatsapp://send" + query;
+      a.removeAttribute("target");
+      // Se o app não abrir (WhatsApp não instalado), segue pelo link normal
+      a.addEventListener("click", function () {
+        var t = setTimeout(function () { location.href = fallback; }, 2000);
+        document.addEventListener("visibilitychange", function () { if (document.hidden) clearTimeout(t); }, { once: true });
+      });
+    } else {
+      a.href = "https://web.whatsapp.com/send" + query;
+    }
   });
 </script>
 </body>
